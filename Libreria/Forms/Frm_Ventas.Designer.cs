@@ -28,22 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_NombreCliente = new System.Windows.Forms.TextBox();
+            this.lbl_NombreCliente = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt_NombreCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 144);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txt_NombreCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.txt_NombreCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_NombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NombreCliente.ForeColor = System.Drawing.Color.White;
+            this.txt_NombreCliente.Location = new System.Drawing.Point(167, 101);
+            this.txt_NombreCliente.Name = "txt_NombreCliente";
+            this.txt_NombreCliente.Size = new System.Drawing.Size(179, 26);
+            this.txt_NombreCliente.TabIndex = 0;
+            // 
+            // lbl_NombreCliente
+            // 
+            this.lbl_NombreCliente.AutoSize = true;
+            this.lbl_NombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NombreCliente.ForeColor = System.Drawing.Color.White;
+            this.lbl_NombreCliente.Location = new System.Drawing.Point(13, 103);
+            this.lbl_NombreCliente.Name = "lbl_NombreCliente";
+            this.lbl_NombreCliente.Size = new System.Drawing.Size(148, 20);
+            this.lbl_NombreCliente.TabIndex = 1;
+            this.lbl_NombreCliente.Text = "Nombre de Cliente";
             // 
             // Frm_Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1003, 540);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl_NombreCliente);
+            this.Controls.Add(this.txt_NombreCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Ventas";
             this.Text = "Frm_Ventas";
@@ -54,6 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_NombreCliente;
+        private System.Windows.Forms.Label lbl_NombreCliente;
     }
 }

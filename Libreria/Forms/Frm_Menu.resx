@@ -118,390 +118,390 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnSalir.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btn_Salir.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
-  <data name="btnSalir.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Salir.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnSalir.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Salir.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="btnSalir.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Salir.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnSalir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Salir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Salir.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 550</value>
   </data>
-  <data name="btnSalir.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_Salir.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Salir.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 50</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Salir.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="btnSalir.Text" xml:space="preserve">
+  <data name="btn_Salir.Text" xml:space="preserve">
     <value>Salir</value>
   </data>
-  <data name="btnSalir.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Salir.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnSalir.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Salir.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
-    <value>btnSalir</value>
+  <data name="&gt;&gt;btn_Salir.Name" xml:space="preserve">
+    <value>btn_Salir</value>
   </data>
-  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Salir.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Salir.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Salir.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="brnAdminUsuarios.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btn_AdminUsr.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="brnAdminUsuarios.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_AdminUsr.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="brnAdminUsuarios.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_AdminUsr.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="brnAdminUsuarios.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_AdminUsr.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="brnAdminUsuarios.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_AdminUsr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="brnAdminUsuarios.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_AdminUsr.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 440</value>
   </data>
-  <data name="brnAdminUsuarios.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_AdminUsr.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="brnAdminUsuarios.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_AdminUsr.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 50</value>
   </data>
-  <data name="brnAdminUsuarios.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_AdminUsr.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="brnAdminUsuarios.Text" xml:space="preserve">
+  <data name="btn_AdminUsr.Text" xml:space="preserve">
     <value>Admin Usuarios</value>
   </data>
-  <data name="brnAdminUsuarios.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_AdminUsr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="brnAdminUsuarios.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_AdminUsr.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;brnAdminUsuarios.Name" xml:space="preserve">
-    <value>brnAdminUsuarios</value>
+  <data name="&gt;&gt;btn_AdminUsr.Name" xml:space="preserve">
+    <value>btn_AdminUsr</value>
   </data>
-  <data name="&gt;&gt;brnAdminUsuarios.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_AdminUsr.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;brnAdminUsuarios.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_AdminUsr.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;brnAdminUsuarios.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_AdminUsr.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnCompras.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btn_Compras.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnCompras.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Compras.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnCompras.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Compras.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="btnCompras.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Compras.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnCompras.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Compras.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnCompras.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Compras.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 390</value>
   </data>
-  <data name="btnCompras.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_Compras.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="btnCompras.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Compras.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 50</value>
   </data>
-  <data name="btnCompras.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Compras.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="btnCompras.Text" xml:space="preserve">
+  <data name="btn_Compras.Text" xml:space="preserve">
     <value>Compras</value>
   </data>
-  <data name="btnCompras.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Compras.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnCompras.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Compras.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnCompras.Name" xml:space="preserve">
-    <value>btnCompras</value>
+  <data name="&gt;&gt;btn_Compras.Name" xml:space="preserve">
+    <value>btn_Compras</value>
   </data>
-  <data name="&gt;&gt;btnCompras.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Compras.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;btnCompras.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Compras.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnCompras.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Compras.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnProveedores.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btn_Proveedores.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnProveedores.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Proveedores.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnProveedores.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Proveedores.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="btnProveedores.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Proveedores.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnProveedores.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Proveedores.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnProveedores.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Proveedores.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 340</value>
   </data>
-  <data name="btnProveedores.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_Proveedores.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="btnProveedores.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Proveedores.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 50</value>
   </data>
-  <data name="btnProveedores.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Proveedores.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="btnProveedores.Text" xml:space="preserve">
+  <data name="btn_Proveedores.Text" xml:space="preserve">
     <value>Proveedores</value>
   </data>
-  <data name="btnProveedores.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Proveedores.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnProveedores.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Proveedores.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnProveedores.Name" xml:space="preserve">
-    <value>btnProveedores</value>
+  <data name="&gt;&gt;btn_Proveedores.Name" xml:space="preserve">
+    <value>btn_Proveedores</value>
   </data>
-  <data name="&gt;&gt;btnProveedores.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Proveedores.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;btnProveedores.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Proveedores.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnProveedores.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Proveedores.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="btnProductos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btn_Productos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnProductos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Productos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnProductos.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Productos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="btnProductos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Productos.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnProductos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Productos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnProductos.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Productos.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 290</value>
   </data>
-  <data name="btnProductos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_Productos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="btnProductos.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Productos.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 50</value>
   </data>
-  <data name="btnProductos.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Productos.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="btnProductos.Text" xml:space="preserve">
+  <data name="btn_Productos.Text" xml:space="preserve">
     <value>Productos</value>
   </data>
-  <data name="btnProductos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Productos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnProductos.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Productos.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnProductos.Name" xml:space="preserve">
-    <value>btnProductos</value>
+  <data name="&gt;&gt;btn_Productos.Name" xml:space="preserve">
+    <value>btn_Productos</value>
   </data>
-  <data name="&gt;&gt;btnProductos.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Productos.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;btnProductos.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Productos.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnProductos.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Productos.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="btnInformes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btn_Informes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnInformes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Informes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnInformes.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Informes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="btnInformes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Informes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnInformes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Informes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnInformes.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Informes.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 240</value>
   </data>
-  <data name="btnInformes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_Informes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="btnInformes.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Informes.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 50</value>
   </data>
-  <data name="btnInformes.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Informes.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="btnInformes.Text" xml:space="preserve">
+  <data name="btn_Informes.Text" xml:space="preserve">
     <value>Informes</value>
   </data>
-  <data name="btnInformes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Informes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnInformes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Informes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnInformes.Name" xml:space="preserve">
-    <value>btnInformes</value>
+  <data name="&gt;&gt;btn_Informes.Name" xml:space="preserve">
+    <value>btn_Informes</value>
   </data>
-  <data name="&gt;&gt;btnInformes.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Informes.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;btnInformes.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Informes.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnInformes.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Informes.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="btnClientes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btn_Clientes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnClientes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Clientes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnClientes.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Clientes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="btnClientes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Clientes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnClientes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Clientes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnClientes.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Clientes.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 190</value>
   </data>
-  <data name="btnClientes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_Clientes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="btnClientes.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Clientes.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 50</value>
   </data>
-  <data name="btnClientes.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Clientes.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="btnClientes.Text" xml:space="preserve">
+  <data name="btn_Clientes.Text" xml:space="preserve">
     <value>Clientes</value>
   </data>
-  <data name="btnClientes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Clientes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnClientes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Clientes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnClientes.Name" xml:space="preserve">
-    <value>btnClientes</value>
+  <data name="&gt;&gt;btn_Clientes.Name" xml:space="preserve">
+    <value>btn_Clientes</value>
   </data>
-  <data name="&gt;&gt;btnClientes.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Clientes.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;btnClientes.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Clientes.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnClientes.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Clientes.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="btnVentas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btn_Ventas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnVentas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Ventas.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnVentas.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_Ventas.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
-  <data name="btnVentas.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Ventas.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnVentas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Ventas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnVentas.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_Ventas.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 140</value>
   </data>
-  <data name="btnVentas.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btn_Ventas.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 20, 0</value>
   </data>
-  <data name="btnVentas.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_Ventas.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 50</value>
   </data>
-  <data name="btnVentas.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_Ventas.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnVentas.Text" xml:space="preserve">
+  <data name="btn_Ventas.Text" xml:space="preserve">
     <value>Ventas</value>
   </data>
-  <data name="btnVentas.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_Ventas.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnVentas.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btn_Ventas.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnVentas.Name" xml:space="preserve">
-    <value>btnVentas</value>
+  <data name="&gt;&gt;btn_Ventas.Name" xml:space="preserve">
+    <value>btn_Ventas</value>
   </data>
-  <data name="&gt;&gt;btnVentas.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Ventas.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;btnVentas.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_Ventas.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnVentas.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Ventas.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="btnHome.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

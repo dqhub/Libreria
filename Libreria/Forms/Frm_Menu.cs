@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 
-namespace Libreria
+namespace Libreria.Forms
 {
     public partial class frmMenu : Form
     {
@@ -87,6 +87,7 @@ namespace Libreria
             panelPrincipal.Controls.Add(formHijo);
             formHijo.BringToFront();
             formHijo.Show();
+            
         }
         
         //Eventos
@@ -94,6 +95,7 @@ namespace Libreria
         private void btnVentas_Click(object sender, EventArgs e)
         {
             ActivarBtn(sender, Colores.colorBtnTxtOriginal);
+            AbrirFormHijo(new Frm_Ventas());
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -124,6 +126,7 @@ namespace Libreria
         private void brnAdminUsuarios_Click(object sender, EventArgs e)
         {
             ActivarBtn(sender, Colores.colorBtnTxtOriginal);
+            AbrirFormHijo(new Frm_AdminUsr());
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
