@@ -16,6 +16,7 @@ namespace Libreria
     {
         private IconButton actualBtn;
         private Panel bordeIzqBtn;
+        private Form formHijoActual;
 
         //Constructor
         public frmMenu()
@@ -27,6 +28,7 @@ namespace Libreria
             bordeIzqBtn.Size = new Size(10,50);
             panelMenu.Controls.Add(bordeIzqBtn);
         }
+
         //Colores Predeterminados
         private struct Colores
         {
@@ -34,6 +36,7 @@ namespace Libreria
             public static Color colorBtnActivado = Color.FromArgb(30, 30, 30);
             public static Color colorBtnBackOriginal = Color.FromArgb(45, 45, 48);
         }
+
         //Metodos
         private void ActivarBtn(object btn, Color color)
         {
@@ -72,6 +75,18 @@ namespace Libreria
         {
             DesactivarBtn();
             bordeIzqBtn.Visible = false;
+        }
+        private void AbrirFormHijo(Form formHijo)
+        {
+            if(formHijoActual != null)
+            {
+                formHijoActual.Close();
+            }
+            formHijoActual = formHijo;
+            formHijo.TopLevel = false;
+            panelPrincipal.Controls.Add(formHijo);
+            formHijo.BringToFront();
+            formHijo.Show();
         }
         
         //Eventos
