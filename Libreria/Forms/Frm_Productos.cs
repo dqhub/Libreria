@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Libreria.Forms
 {
-    public partial class Frm_AdminUsr : Form
+    public partial class Frm_Productos : Form
     {
-        public Frm_AdminUsr()
+        public Frm_Productos()
         {
             InitializeComponent();
         }
