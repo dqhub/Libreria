@@ -207,8 +207,9 @@
             // 
             // panelTitulo
             // 
-            this.panelTitulo.BackColor = System.Drawing.Color.Black;
+            this.panelTitulo.BackColor = System.Drawing.Color.Gray;
             resources.ApplyResources(this.panelTitulo, "panelTitulo");
+            this.panelTitulo.ForeColor = System.Drawing.Color.Black;
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
             // 

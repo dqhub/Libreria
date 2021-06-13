@@ -798,10 +798,10 @@
     <value>Fill</value>
   </data>
   <data name="panelPrincipal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 60</value>
+    <value>0, 50</value>
   </data>
   <data name="panelPrincipal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1003, 540</value>
+    <value>1003, 550</value>
   </data>
   <data name="panelPrincipal.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -822,7 +822,7 @@
     <value>Top</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 50</value>
+    <value>0, 40</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1003, 10</value>
@@ -849,7 +849,7 @@
     <value>0, 0</value>
   </data>
   <data name="panelTitulo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1003, 50</value>
+    <value>1003, 40</value>
   </data>
   <data name="panelTitulo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
