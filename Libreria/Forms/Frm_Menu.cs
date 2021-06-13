@@ -101,6 +101,7 @@ namespace Libreria.Forms
         private void btnClientes_Click(object sender, EventArgs e)
         {
             ActivarBtn(sender, Colores.colorBtnTxtOriginal);
+            AbrirFormHijo(new Frm_Clientes());
         }
 
         private void btnInformes_Click(object sender, EventArgs e)
@@ -111,16 +112,19 @@ namespace Libreria.Forms
         private void btnProductos_Click(object sender, EventArgs e)
         {
             ActivarBtn(sender, Colores.colorBtnTxtOriginal);
+            AbrirFormHijo(new Frm_Productos());
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             ActivarBtn(sender, Colores.colorBtnTxtOriginal);
+            AbrirFormHijo(new Frm_Proveedores());
         }
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
             ActivarBtn(sender, Colores.colorBtnTxtOriginal);
+            AbrirFormHijo(new Frm_Compras());
         }
 
         private void brnAdminUsuarios_Click(object sender, EventArgs e)

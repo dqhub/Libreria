@@ -16,5 +16,10 @@ namespace Libreria.Forms
         {
             InitializeComponent();
         }
+
+        private void btn_GuardarVenta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
