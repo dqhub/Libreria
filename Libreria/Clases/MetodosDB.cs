@@ -11,7 +11,14 @@ namespace Libreria.Clases
 {
     class MetodosDB
     {
-        public static void AgregarUsuario(Usuarios u)
+
+        /*****************************************       **********************************       *****************************************/
+        /*****************************************       ******* MÉTODOS DE LA CLASE ******       *****************************************/
+        /*****************************************       **********************************       *****************************************/
+
+        /******* MÉTODOS de BOTONES ******** Form_AdminUsr ********/
+
+        public static void GuardarUsuario(Usuarios u)
         {
             int retornoComando = 0;
             string query = "INSERT INTO usuario (nombre,cuenta,pw,tipo,estado) " +
@@ -26,11 +33,11 @@ namespace Libreria.Clases
 
             if (retornoComando > 0)
             {
-                MessageBox.Show("El usuario se guardó con éxito.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MensajeGuardarExito();
             }
             else
             {
-                MessageBox.Show("Ocurrió un error al guardar usuario.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MensajeGuardarError();
             }
         }
         public static void EditarUsuario(int valorid, Usuarios u)
@@ -49,11 +56,11 @@ namespace Libreria.Clases
 
             if (retornoComando > 0)
             {
-                MessageBox.Show("El usuario se editó con éxito.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MensajeEditarExito();
             }
             else
             {
-                MessageBox.Show("Ocurrió un error al editar usuario.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MensajeEditarError();
             }
         }
         public static void EliminarUsuario(int valorid)
@@ -70,19 +77,128 @@ namespace Libreria.Clases
 
             if (retornoComando > 0)
             {
-                MessageBox.Show("El usuario se eliminó con éxito.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MensajeEliminarExito();
             }
             else
             {
-                MessageBox.Show("Ocurrió un error al eliminar usuario.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MensajeEliminarError();
             }
         }
 
-        public static DialogResult MensajeDeseaEliminar()
+
+        /******* MÉTODOS de BOTONES ******** Form_Clientes ********/
+
+        public static void GuardarCliente(Clientes c)
+        {
+            int retornoComando = 0;
+            string query = "INSERT INTO cliente (cuit,nombre,domicilio,ingresosbrutos,condicioniva,contacto,email,telefono,telefono2) " +
+                           "VALUES ( '" + c.ClieCUIT + "','" + c.ClieNombreRS + "','" + c.ClieDomicilio + "','" + c.ClieIngBrutos + "','" + c.ClieCondicionIVA + "'," +
+                                    "'" + c.ClieContacto + "','" + c.ClieMail + "','" + c.ClieTelefono1 + "','" + c.ClieTelefono2 + "')";
+
+            MySqlConnection DB = Clases.ConexionDB.ConectarDB();
+            DB.Open();
+            MySqlCommand comando = new MySqlCommand(query, DB);
+            retornoComando = comando.ExecuteNonQuery();
+            DB.Close();
+
+            if (retornoComando > 0)
+            {
+                MensajeGuardarExito();
+            }
+            else
+            {
+                MensajeGuardarError();
+            }
+        }
+        public static void EditarCliente(int valorid, Clientes c)
+        {
+            int retornoComando = 0;
+            string query = "UPDATE cliente " +
+                            "SET cuit ='" + c.ClieCUIT + "',nombre ='" + c.ClieNombreRS + "',domicilio ='" + c.ClieDomicilio + "'," +
+                                "ingresosbrutos ='" + c.ClieIngBrutos + "',condicioniva ='" + c.ClieCondicionIVA + "',contacto ='" + c.ClieContacto + "'," +
+                                "email ='" + c.ClieMail + "',telefono ='" + c.ClieTelefono1 + "',telefono2 ='" + c.ClieTelefono2 + "' " +
+                            "WHERE cliid = " + valorid + "";
+
+            MySqlConnection DB = Clases.ConexionDB.ConectarDB();
+            DB.Open();
+            MySqlCommand comando = new MySqlCommand(query, DB);
+            retornoComando = comando.ExecuteNonQuery();
+            DB.Close();
+
+            if (retornoComando > 0)
+            {
+                MensajeEditarExito();
+            }
+            else
+            {
+                MensajeEditarError();
+            }
+        }
+        public static void EliminarCliente(int valorid)
+        {
+            int retornoComando = 0;
+            string query = "DELETE FROM cliente " +
+                           "WHERE cliid = " + valorid + "";
+
+            MySqlConnection DB = Clases.ConexionDB.ConectarDB();
+            DB.Open();
+            MySqlCommand comando = new MySqlCommand(query, DB);
+            retornoComando = comando.ExecuteNonQuery();
+            DB.Close();
+
+            if (retornoComando > 0)
+            {
+                MensajeEliminarExito();
+            }
+            else
+            {
+                MensajeEliminarError();
+            }
+        }
+
+
+        /******* MÉTODOS para MENSAJES GENÉRICOS para eventos de botones *******/
+
+        public static DialogResult MensajeEliminarPregunta()
         {
             DialogResult a = MessageBox.Show("¿Está seguro que desea eliminar?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             return a;
         }
+        public static DialogResult MensajeEliminarExito()
+        {
+            DialogResult a = MessageBox.Show("El usuario se eliminó con éxito.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return a;
+        }
+        public static DialogResult MensajeEliminarError()
+        {
+            DialogResult a = MessageBox.Show("Ocurrió un error al eliminar.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return a;
+        }
+
+        public static DialogResult MensajeGuardarExito()
+        {
+            DialogResult a = MessageBox.Show("El registro se guardó con éxito.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return a;
+        }
+        public static DialogResult MensajeGuardarError()
+        {
+            DialogResult a = MessageBox.Show("Ocurrió un error al guardar.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return a;
+        }
+
+        public static DialogResult MensajeEditarExito()
+        {
+            DialogResult a = MessageBox.Show("El registro se editó con éxito.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return a;
+        }
+        public static DialogResult MensajeEditarError()
+        {
+            DialogResult a = MessageBox.Show("Ocurrió un error al editar.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return a;
+        }
+
+        /******* MÉTODOS para MENSAJES por ALERTAS *******/
+
         public static DialogResult MensajeBaseVacia()
         {
             DialogResult a = MessageBox.Show("La base de datos está vacía.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);

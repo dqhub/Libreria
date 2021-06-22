@@ -30,11 +30,9 @@
         {
             this.txt_ClieNombre = new System.Windows.Forms.TextBox();
             this.lbl_ClieNombre = new System.Windows.Forms.Label();
-            this.cmb_ClieCUIT = new System.Windows.Forms.ComboBox();
             this.lbl_ClieCUIT = new System.Windows.Forms.Label();
             this.lbl_ClieDomicilio = new System.Windows.Forms.Label();
             this.lbl_ClieCondicionIVA = new System.Windows.Forms.Label();
-            this.txt_ClieCondicionIVA = new System.Windows.Forms.TextBox();
             this.lbl_ClieIngBrutos = new System.Windows.Forms.Label();
             this.txt_ClieIngBrutos = new System.Windows.Forms.TextBox();
             this.lbl_ClieContacto = new System.Windows.Forms.Label();
@@ -50,6 +48,8 @@
             this.btn_ClieEliminar = new FontAwesome.Sharp.IconButton();
             this.btn_ClieEditar = new FontAwesome.Sharp.IconButton();
             this.btn_ClieGuardar = new FontAwesome.Sharp.IconButton();
+            this.cmb_ClieCondicionIVA = new System.Windows.Forms.ComboBox();
+            this.txt_ClieCUIT = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClieLista)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +63,7 @@
             this.txt_ClieNombre.Name = "txt_ClieNombre";
             this.txt_ClieNombre.Size = new System.Drawing.Size(216, 26);
             this.txt_ClieNombre.TabIndex = 0;
+            this.txt_ClieNombre.TextChanged += new System.EventHandler(this.txt_ClieNombre_TextChanged);
             // 
             // lbl_ClieNombre
             // 
@@ -74,18 +75,6 @@
             this.lbl_ClieNombre.Size = new System.Drawing.Size(182, 20);
             this.lbl_ClieNombre.TabIndex = 1;
             this.lbl_ClieNombre.Text = "Nombre / Razón Social";
-            // 
-            // cmb_ClieCUIT
-            // 
-            this.cmb_ClieCUIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.cmb_ClieCUIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_ClieCUIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_ClieCUIT.ForeColor = System.Drawing.Color.White;
-            this.cmb_ClieCUIT.FormattingEnabled = true;
-            this.cmb_ClieCUIT.Location = new System.Drawing.Point(204, 12);
-            this.cmb_ClieCUIT.Name = "cmb_ClieCUIT";
-            this.cmb_ClieCUIT.Size = new System.Drawing.Size(216, 28);
-            this.cmb_ClieCUIT.TabIndex = 11;
             // 
             // lbl_ClieCUIT
             // 
@@ -120,17 +109,6 @@
             this.lbl_ClieCondicionIVA.TabIndex = 21;
             this.lbl_ClieCondicionIVA.Text = "Condicion IVA";
             // 
-            // txt_ClieCondicionIVA
-            // 
-            this.txt_ClieCondicionIVA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.txt_ClieCondicionIVA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_ClieCondicionIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ClieCondicionIVA.ForeColor = System.Drawing.Color.White;
-            this.txt_ClieCondicionIVA.Location = new System.Drawing.Point(204, 188);
-            this.txt_ClieCondicionIVA.Name = "txt_ClieCondicionIVA";
-            this.txt_ClieCondicionIVA.Size = new System.Drawing.Size(216, 26);
-            this.txt_ClieCondicionIVA.TabIndex = 20;
-            // 
             // lbl_ClieIngBrutos
             // 
             this.lbl_ClieIngBrutos.AutoSize = true;
@@ -152,6 +130,7 @@
             this.txt_ClieIngBrutos.Name = "txt_ClieIngBrutos";
             this.txt_ClieIngBrutos.Size = new System.Drawing.Size(216, 26);
             this.txt_ClieIngBrutos.TabIndex = 24;
+            this.txt_ClieIngBrutos.TextChanged += new System.EventHandler(this.txt_ClieIngBrutos_TextChanged);
             // 
             // lbl_ClieContacto
             // 
@@ -174,6 +153,7 @@
             this.txt_ClieContacto.Name = "txt_ClieContacto";
             this.txt_ClieContacto.Size = new System.Drawing.Size(216, 26);
             this.txt_ClieContacto.TabIndex = 38;
+            this.txt_ClieContacto.TextChanged += new System.EventHandler(this.txt_ClieContacto_TextChanged);
             // 
             // lbl_ClieMail
             // 
@@ -196,6 +176,7 @@
             this.txt_ClieMail.Name = "txt_ClieMail";
             this.txt_ClieMail.Size = new System.Drawing.Size(216, 26);
             this.txt_ClieMail.TabIndex = 40;
+            this.txt_ClieMail.TextChanged += new System.EventHandler(this.txt_ClieMail_TextChanged);
             // 
             // lbl_ClieTelefono2
             // 
@@ -218,6 +199,7 @@
             this.txt_ClieTelefono2.Name = "txt_ClieTelefono2";
             this.txt_ClieTelefono2.Size = new System.Drawing.Size(216, 26);
             this.txt_ClieTelefono2.TabIndex = 44;
+            this.txt_ClieTelefono2.TextChanged += new System.EventHandler(this.txt_ClieTelefono2_TextChanged);
             // 
             // lbl_ClieTelefono1
             // 
@@ -240,6 +222,7 @@
             this.txt_ClieTelefono1.Name = "txt_ClieTelefono1";
             this.txt_ClieTelefono1.Size = new System.Drawing.Size(216, 26);
             this.txt_ClieTelefono1.TabIndex = 42;
+            this.txt_ClieTelefono1.TextChanged += new System.EventHandler(this.txt_ClieTelefono1_TextChanged);
             // 
             // dgv_ClieLista
             // 
@@ -249,6 +232,7 @@
             this.dgv_ClieLista.Name = "dgv_ClieLista";
             this.dgv_ClieLista.Size = new System.Drawing.Size(532, 462);
             this.dgv_ClieLista.TabIndex = 50;
+            this.dgv_ClieLista.Click += new System.EventHandler(this.dgv_ClieLista_Click);
             // 
             // txt_ClieDomicilio
             // 
@@ -260,6 +244,7 @@
             this.txt_ClieDomicilio.Name = "txt_ClieDomicilio";
             this.txt_ClieDomicilio.Size = new System.Drawing.Size(216, 26);
             this.txt_ClieDomicilio.TabIndex = 51;
+            this.txt_ClieDomicilio.TextChanged += new System.EventHandler(this.txt_ClieDomicilio_TextChanged);
             // 
             // btn_ClieEliminar
             // 
@@ -277,6 +262,7 @@
             this.btn_ClieEliminar.TabIndex = 49;
             this.btn_ClieEliminar.Text = "Eliminar";
             this.btn_ClieEliminar.UseVisualStyleBackColor = false;
+            this.btn_ClieEliminar.Click += new System.EventHandler(this.btn_ClieEliminar_Click);
             // 
             // btn_ClieEditar
             // 
@@ -294,6 +280,7 @@
             this.btn_ClieEditar.TabIndex = 48;
             this.btn_ClieEditar.Text = "Editar";
             this.btn_ClieEditar.UseVisualStyleBackColor = false;
+            this.btn_ClieEditar.Click += new System.EventHandler(this.btn_ClieEditar_Click);
             // 
             // btn_ClieGuardar
             // 
@@ -311,7 +298,32 @@
             this.btn_ClieGuardar.TabIndex = 32;
             this.btn_ClieGuardar.Text = "Guardar";
             this.btn_ClieGuardar.UseVisualStyleBackColor = false;
-            this.btn_ClieGuardar.Click += new System.EventHandler(this.btn_GuardarVenta_Click);
+            this.btn_ClieGuardar.Click += new System.EventHandler(this.btn_ClieGuardar_Click);
+            // 
+            // cmb_ClieCondicionIVA
+            // 
+            this.cmb_ClieCondicionIVA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.cmb_ClieCondicionIVA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmb_ClieCondicionIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_ClieCondicionIVA.ForeColor = System.Drawing.Color.White;
+            this.cmb_ClieCondicionIVA.FormattingEnabled = true;
+            this.cmb_ClieCondicionIVA.Location = new System.Drawing.Point(204, 186);
+            this.cmb_ClieCondicionIVA.Name = "cmb_ClieCondicionIVA";
+            this.cmb_ClieCondicionIVA.Size = new System.Drawing.Size(216, 28);
+            this.cmb_ClieCondicionIVA.TabIndex = 52;
+            this.cmb_ClieCondicionIVA.TextChanged += new System.EventHandler(this.cmb_ClieCondicionIVA_TextChanged);
+            // 
+            // txt_ClieCUIT
+            // 
+            this.txt_ClieCUIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.txt_ClieCUIT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_ClieCUIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ClieCUIT.ForeColor = System.Drawing.Color.White;
+            this.txt_ClieCUIT.Location = new System.Drawing.Point(204, 14);
+            this.txt_ClieCUIT.Name = "txt_ClieCUIT";
+            this.txt_ClieCUIT.Size = new System.Drawing.Size(216, 26);
+            this.txt_ClieCUIT.TabIndex = 53;
+            this.txt_ClieCUIT.TextChanged += new System.EventHandler(this.txt_ClieCUIT_TextChanged);
             // 
             // Frm_Clientes
             // 
@@ -319,6 +331,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1003, 550);
+            this.Controls.Add(this.txt_ClieCUIT);
+            this.Controls.Add(this.cmb_ClieCondicionIVA);
             this.Controls.Add(this.txt_ClieDomicilio);
             this.Controls.Add(this.dgv_ClieLista);
             this.Controls.Add(this.btn_ClieEliminar);
@@ -335,15 +349,14 @@
             this.Controls.Add(this.lbl_ClieIngBrutos);
             this.Controls.Add(this.txt_ClieIngBrutos);
             this.Controls.Add(this.lbl_ClieCondicionIVA);
-            this.Controls.Add(this.txt_ClieCondicionIVA);
             this.Controls.Add(this.lbl_ClieDomicilio);
-            this.Controls.Add(this.cmb_ClieCUIT);
             this.Controls.Add(this.lbl_ClieCUIT);
             this.Controls.Add(this.lbl_ClieNombre);
             this.Controls.Add(this.txt_ClieNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Clientes";
-            this.Text = "Frm_Ventas";
+            this.Text = "Frm_Clientes";
+            this.Load += new System.EventHandler(this.Frm_Clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClieLista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -354,11 +367,9 @@
 
         private System.Windows.Forms.TextBox txt_ClieNombre;
         private System.Windows.Forms.Label lbl_ClieNombre;
-        private System.Windows.Forms.ComboBox cmb_ClieCUIT;
         private System.Windows.Forms.Label lbl_ClieCUIT;
         private System.Windows.Forms.Label lbl_ClieDomicilio;
         private System.Windows.Forms.Label lbl_ClieCondicionIVA;
-        private System.Windows.Forms.TextBox txt_ClieCondicionIVA;
         private System.Windows.Forms.Label lbl_ClieIngBrutos;
         private System.Windows.Forms.TextBox txt_ClieIngBrutos;
         private FontAwesome.Sharp.IconButton btn_ClieGuardar;
@@ -374,5 +385,7 @@
         private FontAwesome.Sharp.IconButton btn_ClieEliminar;
         private FontAwesome.Sharp.IconButton btn_ClieEditar;
         private System.Windows.Forms.TextBox txt_ClieDomicilio;
+        private System.Windows.Forms.ComboBox cmb_ClieCondicionIVA;
+        private System.Windows.Forms.TextBox txt_ClieCUIT;
     }
 }
