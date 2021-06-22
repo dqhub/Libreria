@@ -122,6 +122,8 @@ namespace Libreria.Forms
             ActualizarUserLista();
         }
 
+        /****** EVENTOS DE BOTONES ******/
+
         private void btn_UserGuardar_Click(object sender, EventArgs e)
         {
             Clases.Usuarios userA = new Clases.Usuarios();
@@ -134,7 +136,7 @@ namespace Libreria.Forms
             
             if (editarEstado != true)
             {
-                Clases.MetodosDB.AgregarUsuario(userA);
+                Clases.MetodosDB.GuardarUsuario(userA);
             }
             else
             {
@@ -166,7 +168,7 @@ namespace Libreria.Forms
             if (DBVacia == false)
             {
                 DialogResult respuesta = 0;
-                respuesta = Clases.MetodosDB.MensajeDeseaEliminar();
+                respuesta = Clases.MetodosDB.MensajeEliminarPregunta();
 
                 if (respuesta == DialogResult.Yes)
                 {
@@ -210,6 +212,9 @@ namespace Libreria.Forms
             btn_UserEliminar.Enabled = false;
         }
 
+
+        /****** EVENTOS DE TEXTBOX ******/
+
         private void txt_UserNombre_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();
@@ -223,6 +228,9 @@ namespace Libreria.Forms
             ActivarBtnGuardar();
         }
 
+
+        /****** EVENTOS DE COMBOS ******/
+
         private void cmb_UserTipoCuenta_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();
@@ -232,6 +240,9 @@ namespace Libreria.Forms
         {
             ActivarBtnGuardar();
         }
+
+
+        /****** EVENTOS DE DATA GRID VIEW ******/
 
         private void dgv_UserLista_Click(object sender, EventArgs e)
         {
