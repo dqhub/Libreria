@@ -45,10 +45,12 @@ namespace Libreria.Forms
 
             txt_ClieCUIT.Select();
         }
-        public void ActualizarClienteLista()
+        public void ActualizarLista()
         {
             editarEstado = false;
-            string query = "SELECT * FROM cliente";
+            string query = "SELECT cliid, fechaalta as 'Fecha de Alta', cuit as CUIT, nombre as 'Nombre y Apellido', domicilio as Domicilio, ingresosbrutos as 'Ingresos Brutos', " +
+                                "condicioniva as 'Condicion frente IVA', contacto as 'Nombre de Contacto', email as Email, telefono as 'Telefono 1', telefono2 as 'Telefono 2' " +
+                           "FROM cliente";
 
             MySqlConnection DB = Clases.ConexionDB.ConectarDB();
             MySqlDataAdapter DBAdaptador = new MySqlDataAdapter(query, DB);
@@ -58,11 +60,13 @@ namespace Libreria.Forms
             {
                 DBVacia = true;
                 dgv_ClieLista.DataSource = DBVirtual;
+                dgv_ClieLista.Columns[0].Visible = false;
             }
             else
             {
                 DBVacia = false;
                 dgv_ClieLista.DataSource = DBVirtual;
+                dgv_ClieLista.Columns[0].Visible = false;
             }
 
             btn_ClieGuardar.Enabled = false;
@@ -74,29 +78,18 @@ namespace Libreria.Forms
         public void ActivarBtnGuardar()
         {
             bool vacio = false;
-            if (txt_ClieCUIT.Text == "")
-                vacio = true;
-            if (txt_ClieNombre.Text == "")
-                vacio = true;
-            if (txt_ClieDomicilio.Text == "")
-                vacio = true;
-            if (txt_ClieIngBrutos.Text == "")
-                vacio = true;
-            if (cmb_ClieCondicionIVA.Text == "")
-                vacio = true;
-            if (txt_ClieContacto.Text == "")
-                vacio = true;
-            if (txt_ClieMail.Text == "")
-                vacio = true;
-            if (txt_ClieTelefono1.Text == "")
-                vacio = true;
-            if (txt_ClieTelefono2.Text == "")
-                vacio = true;
+            if (txt_ClieCUIT.Text == "") { vacio = true; }
+            if (txt_ClieNombre.Text == "") { vacio = true; }
+            if (txt_ClieDomicilio.Text == "") { vacio = true; }
+            if (txt_ClieIngBrutos.Text == "") { vacio = true; }
+            if (cmb_ClieCondicionIVA.Text == "") { vacio = true; }
+            if (txt_ClieContacto.Text == "") { vacio = true; }
+            if (txt_ClieMail.Text == "") { vacio = true; }
+            if (txt_ClieTelefono1.Text == "") { vacio = true; }
+            if (txt_ClieTelefono2.Text == "") { vacio = true; }
 
-            if (vacio == false)
-                btn_ClieGuardar.Enabled = true;
-            else
-                btn_ClieGuardar.Enabled = false;
+            if (vacio == false) { btn_ClieGuardar.Enabled = true; }
+            else { btn_ClieGuardar.Enabled = false; }
         }
 
         /*****************************************       **********************************       *****************************************/
@@ -105,8 +98,9 @@ namespace Libreria.Forms
 
         private void Frm_Clientes_Load(object sender, EventArgs e)
         {
-            ActualizarClienteLista();
+            ActualizarLista();
         }
+
 
         /****** EVENTOS DE BOTONES ******/
 
@@ -114,12 +108,11 @@ namespace Libreria.Forms
         {
             Clases.Clientes clientA = new Clases.Clientes();
 
-
             clientA.ClieCUIT = txt_ClieCUIT.Text.ToString();
             clientA.ClieNombreRS = txt_ClieNombre.Text.ToString();
             clientA.ClieDomicilio = txt_ClieDomicilio.Text.ToString();
             clientA.ClieIngBrutos = txt_ClieIngBrutos.Text.ToString();
-            clientA.ClieCondicionIVA = cmb_ClieCondicionIVA.ToString();
+            clientA.ClieCondicionIVA = cmb_ClieCondicionIVA.SelectedItem.ToString();
             clientA.ClieContacto = txt_ClieContacto.Text.ToString();
             clientA.ClieMail = txt_ClieMail.Text.ToString();
             clientA.ClieTelefono1 = txt_ClieTelefono1.Text.ToString();
@@ -127,32 +120,31 @@ namespace Libreria.Forms
 
             if (editarEstado != true)
             {
-                Clases.MetodosDB.GuardarCliente(clientA);
+                Clases.Metodos.GuardarCliente(clientA);
             }
             else
             {
-                Clases.MetodosDB.EditarCliente(editarid, clientA);
+                Clases.Metodos.EditarCliente(editarid, clientA);
             }
 
             LimpiarForm();
-            ActualizarClienteLista();
-
+            ActualizarLista();
         }
         private void btn_ClieEliminar_Click(object sender, EventArgs e)
         {
             if (DBVacia == false)
             {
                 DialogResult respuesta = 0;
-                respuesta = Clases.MetodosDB.MensajeEliminarPregunta();
+                respuesta = Clases.Metodos.MensajeEliminarPregunta();
 
                 if (respuesta == DialogResult.Yes)
                 {
                     int id = 0;
                     id = int.Parse(dgv_ClieLista.SelectedCells[0].Value.ToString());
 
-                    Clases.MetodosDB.EliminarCliente(id);
+                    Clases.Metodos.EliminarCliente(id);
                     LimpiarForm();
-                    ActualizarClienteLista();
+                    ActualizarLista();
 
                     btn_ClieEditar.Enabled = false;
                     btn_ClieEliminar.Enabled = false;
@@ -160,7 +152,7 @@ namespace Libreria.Forms
             }
             else
             {
-                Clases.MetodosDB.MensajeBaseVacia();
+                Clases.Metodos.MensajeBaseVacia();
             }
         }
         private void btn_ClieEditar_Click(object sender, EventArgs e)
@@ -183,7 +175,7 @@ namespace Libreria.Forms
             }
             else
             {
-                Clases.MetodosDB.MensajeBaseVacia();
+                Clases.Metodos.MensajeBaseVacia();
             }
 
             txt_ClieCUIT.Select();
@@ -198,37 +190,30 @@ namespace Libreria.Forms
         {
             ActivarBtnGuardar();
         }
-
         private void txt_ClieNombre_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();
         }
-
         private void txt_ClieDomicilio_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();
         }
-
         private void txt_ClieIngBrutos_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();
         }
-
         private void txt_ClieContacto_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();
         }
-
         private void txt_ClieMail_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();
         }
-
         private void txt_ClieTelefono1_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();
         }
-
         private void txt_ClieTelefono2_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();

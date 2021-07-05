@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_ClieNombre = new System.Windows.Forms.TextBox();
             this.lbl_ClieNombre = new System.Windows.Forms.Label();
             this.lbl_ClieCUIT = new System.Windows.Forms.Label();
@@ -226,10 +228,34 @@
             // 
             // dgv_ClieLista
             // 
+            this.dgv_ClieLista.AllowUserToAddRows = false;
             this.dgv_ClieLista.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgv_ClieLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_ClieLista.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_ClieLista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_ClieLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_ClieLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ClieLista.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_ClieLista.EnableHeadersVisualStyles = false;
             this.dgv_ClieLista.Location = new System.Drawing.Point(448, 12);
             this.dgv_ClieLista.Name = "dgv_ClieLista";
+            this.dgv_ClieLista.ReadOnly = true;
+            this.dgv_ClieLista.RowHeadersVisible = false;
+            this.dgv_ClieLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_ClieLista.Size = new System.Drawing.Size(532, 462);
             this.dgv_ClieLista.TabIndex = 50;
             this.dgv_ClieLista.Click += new System.EventHandler(this.dgv_ClieLista_Click);
@@ -307,6 +333,11 @@
             this.cmb_ClieCondicionIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_ClieCondicionIVA.ForeColor = System.Drawing.Color.White;
             this.cmb_ClieCondicionIVA.FormattingEnabled = true;
+            this.cmb_ClieCondicionIVA.Items.AddRange(new object[] {
+            "Monotributista",
+            "Responsable Inscripto",
+            "Exento",
+            "Consumidor Final"});
             this.cmb_ClieCondicionIVA.Location = new System.Drawing.Point(204, 186);
             this.cmb_ClieCondicionIVA.Name = "cmb_ClieCondicionIVA";
             this.cmb_ClieCondicionIVA.Size = new System.Drawing.Size(216, 28);

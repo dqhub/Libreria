@@ -16,7 +16,9 @@ namespace Libreria.Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenu());
+            //Application.Run(new Frm_Login());
+            Application.Run(new Frm_Menu());
+
         }
     }
 }

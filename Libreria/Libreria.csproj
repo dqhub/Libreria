@@ -93,7 +93,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Clientes.cs" />
-    <Compile Include="Clases\MetodosDB.cs" />
+    <Compile Include="Clases\CompraDetalle.cs" />
+    <Compile Include="Clases\Compras.cs" />
+    <Compile Include="Clases\Metodos.cs" />
+    <Compile Include="Clases\Productos.cs" />
+    <Compile Include="Clases\Proveedores.cs" />
     <Compile Include="Clases\Usuarios.cs" />
     <Compile Include="Clases\ConexionDB.cs" />
     <Compile Include="Forms\Frm_Compras.cs">
@@ -101,6 +105,12 @@
     </Compile>
     <Compile Include="Forms\Frm_Compras.Designer.cs">
       <DependentUpon>Frm_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_Productos.cs">
       <SubType>Form</SubType>
@@ -143,6 +153,9 @@
     <EmbeddedResource Include="Forms\Frm_Compras.resx">
       <DependentUpon>Frm_Compras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_Productos.resx">
       <DependentUpon>Frm_Productos.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +164,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_Menu.resx">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_AdminUsr.resx">
       <DependentUpon>Frm_AdminUsr.cs</DependentUpon>

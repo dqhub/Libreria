@@ -1,6 +1,6 @@
 ﻿namespace Libreria.Forms
 {
-    partial class frmMenu
+    partial class Frm_Menu
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Menu));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btn_Salir = new FontAwesome.Sharp.IconButton();
             this.btn_AdminUsr = new FontAwesome.Sharp.IconButton();
