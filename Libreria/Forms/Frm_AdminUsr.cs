@@ -40,10 +40,12 @@ namespace Libreria.Forms
 
             txt_UserNombre.Select();
         }
-        public void ActualizarUserLista()
+        public void ActualizarLista()
         {
             editarEstado = false;
-            string query = "SELECT * FROM usuario";
+            string query = "SELECT userid, fechaalta as 'Fecha de Alta', nombre as 'Nombre y Apellido', cuenta as 'Nombre de Cuenta', pw, " +
+                                "tipo as 'Tipo de Cuenta', estado as 'Estado de Cuenta' " +
+                           "FROM usuario";
 
             MySqlConnection DB = Clases.ConexionDB.ConectarDB();
             MySqlDataAdapter DBAdaptador = new MySqlDataAdapter(query, DB);
@@ -53,11 +55,15 @@ namespace Libreria.Forms
             {
                 DBVacia = true;
                 dgv_UserLista.DataSource = DBVirtual;
+                dgv_UserLista.Columns[0].Visible = false;
+                dgv_UserLista.Columns[4].Visible = false;
             }
             else
             {
                 DBVacia = false;
                 dgv_UserLista.DataSource = DBVirtual;
+                dgv_UserLista.Columns[0].Visible = false;
+                dgv_UserLista.Columns[4].Visible = false;
             }
 
             btn_UserGuardar.Enabled = false;
@@ -69,23 +75,15 @@ namespace Libreria.Forms
         public void ActivarBtnGuardar()
         {
             bool vacio = false;
-            if (txt_UserNombre.Text == "")
-                vacio = true;
-            if (txt_UserCuenta.Text == "")
-                vacio = true;
-            if (txt_UserContraseña.Text == "")
-                vacio = true;
-            if (cmb_UserTipoCuenta.Text == "")
-                vacio = true;
-            if (cmb_UserEstadoCuenta.Text == "")
-                vacio = true;
+            if (txt_UserNombre.Text == "") { vacio = true; }
+            if (txt_UserCuenta.Text == "") { vacio = true; }
+            if (txt_UserContraseña.Text == "") { vacio = true; }
+            if (cmb_UserTipoCuenta.Text == "") { vacio = true; }
+            if (cmb_UserEstadoCuenta.Text == "") { vacio = true; }
 
-            if (vacio == false)
-                btn_UserGuardar.Enabled = true;
-            else
-                btn_UserGuardar.Enabled = false;
+            if (vacio == false) { btn_UserGuardar.Enabled = true; }
+            else { btn_UserGuardar.Enabled = false; }
         }
-
 
 
         /****** MÉTODOS DE APARIENCIA ******/
@@ -95,23 +93,37 @@ namespace Libreria.Forms
         //    dgv_UserLista.BorderStyle = BorderStyle.None;
         //    dgv_UserLista.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
         //    dgv_UserLista.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-        //    DataGridViewCellStyle style = dgv_UserLista.ColumnHeadersDefaultCellStyle;
-        //    style.BackColor = Color.Black;
-        //    style.Font = new Font("Century Gothic", 9, FontStyle.Regular);
-        //    style.ForeColor = Color.White;
-        //    style.SelectionBackColor = Color.RoyalBlue;
-        //    style.SelectionForeColor = Color.White;
-        //    style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-        //    dgv_UserLista.ColumnHeadersHeight = 19;
-        //    DataGridViewCellStyle style2 = dgv_UserLista.DefaultCellStyle;
-        //    style2.BackColor = Color.Black;
-        //    style2.Font = new Font("Century Gothic", 8, FontStyle.Regular);
-        //    style2.ForeColor = Color.White;
-        //    style2.SelectionBackColor = Color.RoyalBlue;
-        //    style2.SelectionForeColor = Color.White;
-        //    style2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-        //}
 
+        //    DataGridViewCellStyle style = dgv_UserLista.ColumnHeadersDefaultCellStyle;
+        //        style.BackColor = Color.Black;
+        //        style.Font = new Font("Century Gothic", 9, FontStyle.Regular);
+        //        style.ForeColor = Color.White;
+        //        style.SelectionBackColor = Color.RoyalBlue;
+        //        style.SelectionForeColor = Color.White;
+        //        style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+        //    dgv_UserLista.ColumnHeadersHeight = 19;
+
+        //    DataGridViewCellStyle style2 = dgv_UserLista.DefaultCellStyle;
+        //        style2.BackColor = Color.Black;
+        //        style2.Font = new Font("Century Gothic", 8, FontStyle.Regular);
+        //        style2.ForeColor = Color.White;
+        //        style2.SelectionBackColor = Color.RoyalBlue;
+        //        style2.SelectionForeColor = Color.White;
+        //        style2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+        //
+
+        //    Hay que buscar bien el codigo de la propiedad
+
+        //    Apariencia
+        //          EnableHeadersVisualStyle = false
+        //          RowHeaderCell = false
+        //    Comportamiento
+        //          AllowUsersToAddRows = false
+        //          ReadOnly = true
+        //          Selection Mode = true
+        //
+        //}
 
         /*****************************************       **********************************       *****************************************/
         /*****************************************       ***** EVENTOS DEL FORMULARIO *****       *****************************************/
@@ -119,7 +131,7 @@ namespace Libreria.Forms
 
         private void Frm_AdminUsr_Load(object sender, EventArgs e)
         {
-            ActualizarUserLista();
+            ActualizarLista();
         }
 
         /****** EVENTOS DE BOTONES ******/
@@ -136,48 +148,31 @@ namespace Libreria.Forms
             
             if (editarEstado != true)
             {
-                Clases.MetodosDB.GuardarUsuario(userA);
+                Clases.Metodos.GuardarUsuario(userA);
             }
             else
             {
-                //bool compara = false;
-                //var userB = new Clases.Usuarios();
-
-                //userB.UserNombre = dgv_UserLista.SelectedCells[2].Value.ToString();
-                //userB.UserCuenta = dgv_UserLista.SelectedCells[3].Value.ToString();
-                //userB.UserContraseña = dgv_UserLista.SelectedCells[4].Value.ToString();
-                //userB.UserTipoCuenta = dgv_UserLista.SelectedCells[5].Value.ToString();
-                //userB.UserEstadoCuenta = dgv_UserLista.SelectedCells[6].Value.ToString();
-
-                //compara = userA.Equals(userB);
-                //if (compara == false)
-                //{
-                    Clases.MetodosDB.EditarUsuario(editarid, userA);
-                //}
-                //else
-                //{
-                //    Clases.MetodosDB.MensajeValoresIguales();
-                //}
+                    Clases.Metodos.EditarUsuario(editarid, userA);
             }
 
             LimpiarForm();
-            ActualizarUserLista();
+            ActualizarLista();
         }
         private void btn_UserEliminar_Click(object sender, EventArgs e)
         {
             if (DBVacia == false)
             {
                 DialogResult respuesta = 0;
-                respuesta = Clases.MetodosDB.MensajeEliminarPregunta();
+                respuesta = Clases.Metodos.MensajeEliminarPregunta();
 
                 if (respuesta == DialogResult.Yes)
                 {
                     int id = 0;
                     id = int.Parse(dgv_UserLista.SelectedCells[0].Value.ToString());
 
-                    Clases.MetodosDB.EliminarUsuario(id);
+                    Clases.Metodos.EliminarUsuario(id);
                     LimpiarForm();
-                    ActualizarUserLista();
+                    ActualizarLista();
 
                     btn_UserEditar.Enabled = false;
                     btn_UserEliminar.Enabled = false;
@@ -185,7 +180,7 @@ namespace Libreria.Forms
             }
             else
             {
-                Clases.MetodosDB.MensajeBaseVacia();
+                Clases.Metodos.MensajeBaseVacia();
             }
         }
         private void btn_UserEditar_Click(object sender, EventArgs e)
@@ -204,7 +199,7 @@ namespace Libreria.Forms
             }
             else
             {
-                Clases.MetodosDB.MensajeBaseVacia();
+                Clases.Metodos.MensajeBaseVacia();
             }
 
             txt_UserNombre.Select();
@@ -235,7 +230,6 @@ namespace Libreria.Forms
         {
             ActivarBtnGuardar();
         }
-
         private void cmb_UserEstadoCuenta_TextChanged(object sender, EventArgs e)
         {
             ActivarBtnGuardar();

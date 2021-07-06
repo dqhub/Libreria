@@ -12,14 +12,14 @@ using FontAwesome.Sharp;
 
 namespace Libreria.Forms
 {
-    public partial class frmMenu : Form
+    public partial class Frm_Menu : Form
     {
         private IconButton actualBtn;
         private Panel bordeIzqBtn;
         private Form formHijoActual;
 
         //Constructor
-        public frmMenu()
+        public Frm_Menu()
         {
 
             InitializeComponent();
